@@ -23,12 +23,15 @@ const booklist = [
         series: 'A Valiant Salvage Story'
     },
     {
-        image: '/book-cover-placeholder.png',
+        image: '/theSilenceCover.jpg',
         title: 'The Silence Between Stars',
         synopsis: [
-          'Another story in the Valiant Salvage stories following Vee back to her home to discover'
+          'In a society that punishes emotion and demands obedience, Virell’ka dared to leave. Now she\'s been forced back to the Solivarn—her birthplace and a worldship on the brink. A strange virus spreads. A rebellion brews. And a group called The Silence is whispering dangerous truths. With her unlikely crew at her side, Vee must confront the past, outwit the system, and decide who she wants to be when the silence breaks.',
+          'Because some fractures are worth keeping.',
+          'And not every command must be obeyed.'
         ],
-        isComingSoon: true,
+        isComingSoon: false,
+        link: 'https://a.co/d/7d2k27p',
         series: 'A Valiant Salvage Story'
     },
 ];
