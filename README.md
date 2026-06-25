@@ -2,6 +2,21 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Deployment
+
+The GitHub Actions workflow in `.github/workflows/cicd.yml` deploys pushes to `main` to the `charlescoffman.com` S3 bucket.
+
+Required repository secrets:
+
+- `AWS_ACCESS_KEY`
+- `AWS_ACCESS_SECRET`
+
+Optional repository secret:
+
+- `CLOUDFRONT_DISTRIBUTION_ID` - when set, the workflow invalidates `/*` after the S3 upload completes.
+
+The AWS user for those credentials needs S3 deploy permissions and `cloudfront:CreateInvalidation` for the configured distribution.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
